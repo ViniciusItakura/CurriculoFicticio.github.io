@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  padding: 40px 60px;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-lista {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-lista a {
+  text-decoration: none;
+  color: #141414;
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .header-lista a {
+    padding: 10px 25px;
+    background: #f0f0f0;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding: 40px 20px;
+  }
+}
